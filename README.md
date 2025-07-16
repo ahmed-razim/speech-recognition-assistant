@@ -37,3 +37,37 @@ It compares their **accuracy, speed, and reliability** under different noise and
 ```bash
 pip install -r requirements.txt
 
+### 2. Run the assistant
+```bash
+python src/main.py
+
+
+---
+
+##  Summary of Results
+
+| Engine           | Accuracy (Quiet) | Accuracy (Noise) | Offline Support| Response Time |
+|------------------|------------------|------------------|----------------|----------------|
+| Google Web API   | 95%              | 85%              |  No            | Fast           |
+| CMU Sphinx       | 70%              | 50%              |  Yes           | Moderate       |
+
+---
+
+##  Future Scope
+
+- Add support for natural language conversations using ChatGPT or other NLP models.
+- Integrate Whisper (OpenAI) for better offline accuracy than CMU Sphinx.
+- Expand command set for smart home automation, file handling, or system monitoring.
+- Deploy the assistant on mobile or IoT platforms for real-world use.
+- Implement user voice profile recognition for personalization and access control.
+
+---
+
+##  Limitations
+
+- CMU Sphinx has limited accuracy and struggles in noisy environments.
+- Google Web Speech API requires a stable internet connection.
+- Only basic commands are supported in this version (e.g., open apps, search web).
+- No GUI or conversational memory implemented yet.
+
+---
