@@ -1,0 +1,6 @@
+SpeechRecognition
+PyAudio
+pocketsphinx
+pyttsx3
+gTTS
+playsound
