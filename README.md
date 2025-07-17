@@ -7,6 +7,23 @@ This project implements a **Python-based voice assistant** using both:
 It compares their **accuracy, speed, and reliability** under different noise and connectivity conditions.
 
 ---
+## Project Directory Structure
+
+
+voice-assistant-project/
+├── README.md                  # Project overview and documentation
+├── requirements.txt           # Python dependencies
+├── src/                       # Source code files
+│   ├── main.py                # Main entry point for the assistant
+│   ├── assistant.py           # Handles command recognition and execution
+│   ├── recognizer_google.py   # Google Web Speech API integration
+│   ├── recognizer_sphinx.py   # CMU Sphinx offline engine integration
+│   └── tts_engine.py          # Text-to-speech logic
+├── audio/                     # Audio files (e.g., prompts or alerts)
+│   └── beep.wav               # Beep sound to indicate listening
+└── utils/                     # Utility/helper functions
+    └── helper.py              # Common utility functions
+
 
 ##  Features
 
@@ -38,7 +55,7 @@ It compares their **accuracy, speed, and reliability** under different noise and
 pip install -r requirements.txt
 
 ### 2. Run the assistant
-```bash
+```
 python src/main.py
 
 
@@ -70,3 +87,12 @@ python src/main.py
 - No GUI or conversational memory implemented yet.
 
 ---
+
+##  Author
+
+**Ahmed Razim**  
+ B.Tech Student |  Python & Java Enthusiast  
+
+-  [GitHub](https://github.com/ahmed-razim)
+-  Email: razim1038@gmail.com
+
